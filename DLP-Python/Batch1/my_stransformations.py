@@ -5,7 +5,7 @@ from pyspark.sql.types import StructType,StructField,IntegerType,DoubleType,Stri
 
 file_path= spark.conf.get('source_path')
 
-claims_file_path='/Volumes/learn_adb_fikrat/bronze/landing/crash-data/insurance_claims/'
+claims_file_path='/Volumes/main/bronze/landing/crash-data/insurance_claims/'
 
 claims_schema=StructType([StructField('CollisionID', StringType(), True), StructField('ClaimAmount', StringType(), True), StructField('ClaimDateTime', StringType(), True), StructField('Bronze_Ingestion_Timestamp', TimestampType(), False)])
 

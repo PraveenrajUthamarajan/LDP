@@ -3,7 +3,7 @@ import pyspark.sql.functions as F
 
 # COMMAND ----------
 
-dbutils.widgets.text("unity_catalog","learn_adb_fikrat")
+dbutils.widgets.text("unity_catalog","main")
 uc_name=dbutils.widgets.get("unity_catalog")
 print(uc_name)
 

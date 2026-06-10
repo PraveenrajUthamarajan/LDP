@@ -2,7 +2,7 @@ from pyspark import pipelines as dp
 from utilities.schemas import bronze_schema,silver_schema,bronze_schema_sql
 import pyspark.sql.functions as F
 
-# file_path='/Volumes/learn_adb_fikrat/bronze/landing/crash-data/vehicle_collisions/'
+# file_path='/Volumes/main/bronze/landing/crash-data/vehicle_collisions/'
 
 file_path= spark.conf.get('source_path')
 
